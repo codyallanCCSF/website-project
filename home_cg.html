@@ -11,10 +11,11 @@
 
         /* Nav menu style and positioning */
          ul {
-            padding-top: 40px;
-            padding-left: 80px;
-            max-width: fit-content;
-            max-height: fit-content;
+            position: absolute;            
+            top: 10vh;
+            left: 5vw;           
+            list-style-type: none;
+            text-align: left;
         }
       
         /* Webpage font and background rules */
@@ -28,6 +29,11 @@
             min-height: 100vh;
         }
 
+        /* Helps center content horizontally */
+        h1 {
+            margin-top: 15vh;
+        }
+
         /* Heading styles */
         h1, h2, h4 {
             text-align: center;
@@ -36,7 +42,7 @@
         
         /* Paragraph text styling */
         p {
-            padding: 10px;
+            
             max-width: 80vw;
             text-align: center;
             margin-inline: auto;
@@ -49,10 +55,12 @@
         ol {
             padding: 20px;
             text-align: center;
-            list-style-position: inside;
+            list-style-position: inside;            
+            /*Offest for true centering*/
             padding-right: 30px;
-            color: darkslategrey;
+            color: darkred;
             font-size: 20px;
+            
         }
 
         /* Footer positioning */
@@ -89,13 +97,15 @@
         This is the second paragraph of the two I mentioned earlier.
         This paragraph also requires me to utilize the
         break tag, which will occur in 3.. 2.. 1.. <br><br>Break! See?
-        Good. Now, behold my numbered list!
+        Good. Now, <i>behold my numbered list!</i>
     </p>
     
     <!--Ordered list-->
     <ol>
+        <strong>
         <li>This is item one in a numbered list.</li>
         <li>This is item two in a numbered list.</li>
+        </strong>
     </ol>
     
     <!--Footer-->
