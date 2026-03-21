@@ -6,16 +6,91 @@
     <meta name="description" content="Webpage project for my CNIT131 class">
     <title>CNIT131 Project</title>
     <!--This is page 3 of my CNIT131 website-->
+    <style>
+        body {
+            padding-top: 20vh;
+        }
+
+         ul {
+            position: absolute;
+            top:5vh;
+            left: 5vw;
+            padding-top: 15px;
+            padding-left: 15px;
+            margin: 0;
+            list-style-type: none;
+            text-align: left;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 5vh auto 0;
+        }
+
+        table {
+            
+            table-layout: fixed;
+            margin: 2vh auto;            
+            max-width: 85vw;
+            width: 75vw;
+        }
+
+        th:nth-child(4) { width: 40%; }
+
+        table, tr, td {
+            border: 1px solid black;
+        }
+
+        td, th {
+            text-align: center;
+        }
+
+
+    </style>
 </head>
 <body>
 
-    <h1>Page 3 - Work in progress!</h1>
+    <h1>Subnet Masks</h1>
 
     <ul>
     <li><a href="home_cg.html">Home</a></li>
     <li><a href="p01.html">Page 1</a></li>
     <li><a href="p02.html">Page 2</a></li>
+    <li>Page 3</li>
     </ul>
+
+    <table>
+        <tr>
+            <th>CIDR/Class</th>
+            <th>Subnet Mask</th>
+            <th>Usable Hosts</th>
+            <th>Typical Use</th>
+        </tr>
+        <tr>
+            <td>/8 Class A</td>
+            <td>255.0.0.0</td>
+            <td>16,777,214</td>
+            <td>Large ISPs, Governments</td>
+        </tr>
+        <tr>
+            <td>/16 Class B</td>
+            <td>255.255.0.0</td>
+            <td>65,534</td>
+            <td>Universities, Large Orgs</td>
+        </tr>
+        <tr>
+            <td>/24 Class C</td>
+            <td>255.255.255.0</td>
+            <td>254</td>
+            <td>Small Offices, Home Networks</td>
+        </tr>
+        <tr>
+            <td>/30 Point-to-Point</td>
+            <td>255.255.255.252</td>
+            <td>2</td>
+            <td>Router-to-Router Links</td>
+        </tr>
+    </table>
 
 </body>
 </html>
