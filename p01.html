@@ -17,7 +17,7 @@
             background-position: center center;
         }
          /* Nav menu style and positioning */
-         ul {
+         #nav {
             position: absolute;
             top:5vh;
             left: 5vw;
@@ -28,16 +28,31 @@
             text-align: left;
         }
 
-        h1 {
-            text-align: left;
+        p {
+            font-size: 20px;
+        }
+
+        #link {
+            padding: 0;
+            list-style-type: none;
+        }       
+
+        h1 {            
+            text-align: right;
             margin-left: 5vw;
             margin-top: 25vh;
+            padding-bottom: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
         }
     </style>
 </head>
 <body>    
 
-    <ul>
+    <ul id="nav">
     <li><a href="home_cg.html">Home</a></li>
     <li>Page 1</li>
     <li><a href="p02.html">Page 2</a></li>
@@ -45,6 +60,55 @@
     </ul>
 
     <h1>Cybersecurity</h1>
+
+    <h2>Offensive</h2>
+    <p>Offensive cybersecurity is the process of identifying, 
+        testing and bypassing security measures.</p>
+    <h3 style="color: darkred">Offensive Roles:
+        <ul>
+            <li>Penetration Tester</li>
+            <li>Vulnerability Researcher</li>
+            <li>Ethical Hacker</li>
+        </ul>
+    </h3>
+    <h2>Defensive</h2>
+    <p>Defensive cybersecurity consists of prevention, detection, and mitigation of cyber attacks.</p>
+    <h3 style="color: darkblue">Defensive Roles:
+        <ul>
+            <li>Security Operations Center (SOC) Analyst</li>
+            <li>Incident Responder</li>
+            <li>Security Architect</li>
+        </ul>
+    </h3>
+
+    <h2>Resources</h2>
+
+    <ul id="link">
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Github</a></li>
+        <p> - Project Reporsitories</p>
+        <li><a href="https://owasp.org/www-project-juice-shop/#" target="_blank" rel="noopener noreferrer">OWASP Juice Shop</a></li>
+        <p> - Vulnerable E-Commerce Website</p>
+        <li><a href="https://www.bugcrowd.com/" target="_blank" rel="noopener noreferrer">Bug Crowd</a></li>
+        <p> - Bug Bounty Board</p>
+        <li><a href="https://tinyurl.com/3zmdv9j6" target="_blank" rel="noopener noreferrer">Digital Ocean</a></li>
+        <p> - Cloud Computing Platform</p>
+        <li><a href="https://tinyurl.com/57yb6huu" target="_blank" rel="noopener noreferrer">The Cyber Mentor</a></li>
+        <p> - Awesome Cybersecurity instrucor and YouTuber</p>
+        <li><a href="https://tinyurl.com/" target="_blank" rel="noopener noreferrer">TinyURL</a></li>
+        <p> - No Nonsense URL Shortening</p>
+        
+    </ul>
+
+     <!--Footer-->
+    <footer>
+        <h4>Copyright &copy; Cody Gilbert &#9775;<h4>
+        <h4>
+             Photo by <a href="https://tinyurl.com/4y4p95wu">Jean-Philippe Delberghe</a> on 
+             <a href="https://tinyurl.com/4239h2ef">Unsplash</a>
+      
+      </h4>
+    </footer>
+    
 
 </body>
 </html>
