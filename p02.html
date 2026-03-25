@@ -8,8 +8,15 @@
     <!--This is page 2 of my CNIT131 website-->
 
     <style>
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: lightsteelblue;
+        }
+
          ul {
             position: absolute;
+            object-fit: contain;
             top:5vh;
             left: 5vw;
             padding-top: 15px;
@@ -19,23 +26,60 @@
             text-align: left;
         }
 
-        iframe {
-            display: flex;            
-            margin: 20vh auto;
-
+        
+        div {
+            display: block;
+            width: fit-content;
+            height: fit-content;
+            margin: 20vh auto 20px;
+            padding: 40px;
+            border: 5px solid black;
         }
+
+        h1 {
+            text-align: center;
+            
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;            
+        }        
+
+        iframe {
+            display: block;            
+            margin: 10px auto 0;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            max-width: 560px;
+            max-height: 315px;
+        }
+       
     </style>
 </head>
+
 <body>
-
-    <h1>Page 2 - Work in progress!</h1>
-
     <ul>
     <li><a href="home_cg.html">Home</a></li>
     <li><a href="p01.html">Page 1</a></li>
     <li>Page 2</li>
     <li><a href="p03.html">Page 3</a></li>
     </ul>
+
+    <div>
+    <h1>Gallery</h1>
+
+    <h3>Crash Course Computer Science</h3>
 
     <iframe 
     width="560" height="315" 
@@ -44,5 +88,24 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+    <h3>Pretend this is 4-dimensional!</h3>
+
+    <iframe src="https://giphy.com/embed/9POMmQiLkvhRzKFXyT" 
+    width="480" height="269" frameBorder="0" class="giphy-embed" 
+    allowFullScreen></iframe><p><a href="https://tinyurl.com/bdefm9mf">via GIPHY</a></p>
+
+    <img src="images/Gallery/guerrillabuzz.jpg">
+    <p style="text-align: center;">Photo by 
+        <a href="https://tinyurl.com/trtknbvr" target="_blank">GuerrillaBuzz</a> on 
+        <a href="https://tinyurl.com/5a8593h3" target="_blank">Unsplash</a></p>
+    
+    <img src="images/Gallery/arvin-keynes.jpg">
+    <p style="text-align: center;">Photo by <a href="https://tinyurl.com/56kmac8u" target="_blank">arvin keynes</a> on 
+    <a href="https://tinyurl.com/9dzjrcnk" target="_blank">Unsplash</a></p>    
+    </div>
+
+    <footer>
+        <h4 style="text-align: center;">Copyright &copy; Cody Gilbert &#9775;<h4>        
+    </footer>
 </body>
 </html>
