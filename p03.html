@@ -8,10 +8,12 @@
     <!--This is page 3 of my CNIT131 website-->
     <style>
         body {
+            background-color: lightgrey;
             padding-top: 20vh;
         }
 
          ul {
+            font-family: 'Courier New', Courier, monospace;
             position: absolute;
             top:5vh;
             left: 5vw;
@@ -23,6 +25,7 @@
         }
 
         h1 {
+            font-family: 'Courier New', Courier, monospace;
             text-align: center;
             margin: 5vh auto 0;
         }
@@ -35,7 +38,17 @@
             width: 75vw;
         }
 
+        th {
+            background-color: #2c3e50;
+            color: white;
+            paddings: 10px;
+        }
+
         th:nth-child(4) { width: 40%; }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
 
         table, tr, td {
             border: 1px solid black;
@@ -45,12 +58,14 @@
             text-align: center;
         }
 
+        footer {
+            text-align: center;
+            padding-top: 40px;
+        }
 
     </style>
 </head>
 <body>
-
-    <h1>Subnet Masks</h1>
 
     <ul>
     <li><a href="home_cg.html">Home</a></li>
@@ -59,6 +74,7 @@
     <li>Page 3</li>
     </ul>
 
+    <h1>Subnet Masks</h1>
     <table>
         <tr>
             <th>CIDR/Class</th>
@@ -92,5 +108,72 @@
         </tr>
     </table>
 
+    <h1>Ports and Protocols</h1>
+    <table>
+        <tr>
+            <th>Port Number</th>
+            <th>Protocol</th>
+            <th>Name</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>20/21</td>
+            <td>TCP</td>
+            <td>FTP</td>
+            <td>File Transfer</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>TCP</td>
+            <td>SSH</td>
+            <td>Secure Shell - Remote Login</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>TCP</td>
+            <td>SMTP</td>
+            <td>Simple Mail Transfer Protocol</td>
+        </tr>
+        <tr>
+            <td>53</td>
+            <td>UDP/TCP</td>
+            <td>DNS</td>
+            <td>Domain Name System</td>
+        </tr>
+        <tr>
+            <td>80</td>
+            <td>TCP</td>
+            <td>HTTP</td>
+            <td>Hyper Text Transfer Protocol</td>
+        </tr>
+        <tr>
+            <td>110</td>
+            <td>TCP</td>
+            <td>POP3</td>
+            <td>Post Office Protocol v3</td>
+        </tr>
+        <tr>
+            <td>143</td>
+            <td>TCP</td>
+            <td>IMAP</td>
+            <td>Internet Message Access Protocol</td>
+        </tr>
+        <tr>
+            <td>443</td>
+            <td>TCP</td>
+            <td>HTTPS</td>
+            <td>HTTP Secure - TLS/SSL Encrypted</td>
+        </tr>
+        <tr>
+            <td>3389</td>
+            <td>TCP</td>
+            <td>RDP</td>
+            <td>Remote Desktop Protocol</td>
+        </tr>
+    </table>
+
+    <footer>
+        <h4 style="text-align: center;">Copyright &copy; Cody Gilbert &#9775;<h4>        
+    </footer>
 </body>
 </html>
