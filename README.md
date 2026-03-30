@@ -28,16 +28,6 @@ This project consists of a multi-page website developed for the CNIT131 course a
 
 ---
 
-## Development Context
-
-* **Author**: Cody Allan
-* **Email**: cgilber2@mail.ccsf.edu
-* **Institution**: City College of San Francisco
-* **Course**: CNIT131
-* **Tools Used**: Visual Studio Code, Git, and various Linux environments including Kali Linux via WSL2.
-
----
-
 ## Future Implementations
 
 * Integration of a Botnet project description.
